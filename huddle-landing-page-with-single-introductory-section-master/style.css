@@ -1,0 +1,125 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+body {
+  margin: 0;
+  padding: 50px;
+  background-color: var(--violet);
+  background-image: url(/images/bg-desktop.svg);
+  background-size: cover;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+}
+
+#content {
+  display: flex;
+  margin-top: 60px;
+  height: 100%;
+  gap: 40px;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+#rhs {
+  margin-top: 30px;
+  position: relative;
+}
+
+button.register {
+  margin-top: 30px;
+  border: none;
+  border-radius: 40px;
+  height: 50px;
+  width: 200px;
+  font-family: inherit;
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: hsl(228, 45%, 44%);
+  font-weight: 600;
+}
+
+button.register:hover {
+  background-color: var(--Soft-Magenta);
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+ion-icon {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+ion-icon:hover {
+  color: var(--Soft-Magenta);
+}
+
+#icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.home-para {
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.m-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(/images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 30px;
+  }
+
+  .logo {
+    margin-top: 10px;
+    width: 40%;
+  }
+
+  #content {
+    flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  #rhs {
+    margin-top: 0;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #icons {
+    justify-content: center;
+  }
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
